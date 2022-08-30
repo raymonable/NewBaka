@@ -3,7 +3,9 @@ NLS([[
     
     StarterGui:SetCore("ResetButtonCallback", false)
     
-    owner.PlayerGui:FindFirstChild("ScriptHubGUI"):Destroy()
+    pcall(function()
+        owner.PlayerGui:FindFirstChild("ScriptHubGUI"):Destroy()
+    end)
     
     local emojis = {
         flushed = function() return utf8.char(0x1f633) end,
