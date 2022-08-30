@@ -1,4 +1,10 @@
 NLS([[
+    local StarterGui = game:GetService("StarterGui")
+    
+    StarterGui:SetCore("ResetButtonCallback", false)
+    
+    owner.PlayerGui:FindFirstChild("ScriptHubGUI"):Destroy()
+    
     local emojis = {
         flushed = function() return utf8.char(0x1f633) end,
         plead = function() return utf8.char(0x1f97A) end
