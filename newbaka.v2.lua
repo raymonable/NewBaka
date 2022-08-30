@@ -74,6 +74,11 @@ if e >= 6 - #texts + 1 then
     e = e - (6 - #texts)
     parsed = parsed .. ' ' .. texts[e]
 end
+local e = math.random(0, 6)
+if e >= 6 - #texts + 1 then
+    e = e - (6 - #texts)
+    parsed = texts[e] .. ' ' .. parsed
+end
 local e = math.random(0, 10)
 if e >= 10 - #emojis + 1 then
     e = e - (10 - #emojis)
